@@ -1,0 +1,221 @@
+body {
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  background: linear-gradient(135deg, #fdeff9 0%, #ecb8ff 100%);
+  min-height: 100vh;
+  margin: 0;
+  direction: rtl;
+}
+
+.main-container, #game-container {
+  background: #fff8;
+  box-shadow: 0 4px 18px rgba(120,30,180,0.10);
+  border-radius: 20px;
+  max-width: 420px;
+  margin: 60px auto 0;
+  padding: 32px 22px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3em;
+  color: #7b2ff2;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.voice-bar {
+  margin: 14px auto 22px;
+  font-size: 1.05em;
+}
+
+.welcome {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #5a189a;
+  margin-bottom: 10px;
+}
+
+.choose {
+  font-size: 1.12em;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+.buttons button {
+  display: block;
+  width: 90%;
+  margin: 19px auto;
+  padding: 16px;
+  font-size: 1.27em;
+  background: linear-gradient(90deg,#7b2ff2 20%,#f357a8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(123,47,242,0.07);
+}
+
+.buttons button:hover {
+  background: linear-gradient(90deg,#f357a8 20%,#7b2ff2 100%);
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.88em;
+  color: #888;
+}
+
+/* دومينو */
+#game-container {
+  margin-top: 20px;
+  direction: rtl;
+}
+
+.domino-board {
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.domino-row {
+  display: flex;
+  gap: 7px;
+}
+
+.domino-tile {
+  width: 48px;
+  height: 28px;
+  background: #eee;
+  border: 2px solid #7b2ff2;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.13em;
+  font-weight: bold;
+  color: #222;
+  padding: 4px 7px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+
+.domino-tile:hover {
+  background: #e0aaff;
+}
+
+.player-hand {
+  margin-top: 24px;
+  font-size: 1em;
+}
+
+.player-hand .domino-tile {
+  cursor: pointer;
+}
+
+.game-status {
+  margin: 16px 0;
+  font-weight: bold;
+  color: #7b2ff2;
+}
+
+.back-btn {
+  margin-top: 36px;
+  padding: 8px 30px;
+  background: #7b2ff2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* ليدو */
+.ludo-board {
+  margin: 0 auto 18px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2px;
+  justify-content: center;
+  background: #f9f7f1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #bbb2;
+}
+
+.ludo-cell {
+  width: 40px;
+  height: 40px;
+  background: #ffe7be;
+  border-radius: 6px;
+  border: 1px solid #d3c7b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.02em;
+}
+
+.ludo-piece {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #7b2ff2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1em;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px #8882;
+}
+
+.ludo-piece.player1 { background: #7b2ff2; }
+.ludo-piece.player2 { background: #f357a8; }
+.ludo-piece.player3 { background: #00b894; }
+.ludo-piece.player4 { background: #fdcb6e; color: #444; }
+
+.ludo-controls {
+  margin: 18px 0 4px 0;
+  font-size: 1.08em;
+}
+.ludo-dice-btn {
+  margin: 0 6px;
+  padding: 8px 24px;
+  background: #7b2ff2;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.ludo-dice-btn:hover {
+  background: #f357a8;
+}
+.ludo-dice {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-left: 10px;
+  border: 2px solid #7b2ff2;
+  border-radius: 13px;
+  background: #fff;
+  font-size: 2em;
+  line-height: 48px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.ludo-status {
+  margin: 14px 0;
+  font-weight: bold;
+  color: #7b2ff2;
+}

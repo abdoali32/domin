@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>دومينو - نادي الألعاب</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="domino.css">
+</head>
+<body>
+  <div class="main-container" id="domino-menu">
+    <h1>لعبة الدومينو</h1>
+    <div class="subtitle">نادي الألعاب – عبده ❤️</div>
+    <div class="voice-bar">
+      <span>🔊 الصوت: </span>
+      <button id="sound-toggle">إيقاف الصوت</button>
+    </div>
+    <div class="buttons">
+      <button id="vs-ai">العب ضد الكمبيوتر</button>
+      <button id="vs-friend">العب مع صديق</button>
+      <button onclick="window.location.href='index.html'">⬅️ رجوع للنادي</button>
+    </div>
+    <div class="footer">© 2025 نادي الألعاب</div>
+  </div>
+  <div id="game-container"></div>
+  <audio id="audio-player"></audio>
+  <script src="domino.js"></script>
+</body>
+</html>
